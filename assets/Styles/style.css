@@ -51,6 +51,8 @@ a{
     height: 25px;
     background-color : black;
     color: white;
+
+justify-items: center;    
 text-align: center;
 text-decoration: none;
 
@@ -99,7 +101,7 @@ main
  min-width: 1000px;
 }
 
-/*FOTO DE CHICO JUGANDO HOCKEY*/
+/*FOTO DE CHICO JUGANDO HOCKEY SECCION ABOUT*/
 .foto-about{
     border: 5px solid black;
     width: 345px;
@@ -114,14 +116,48 @@ section{
 }
 
 /*CONTENEDORES*/
-article, .mision{
+article, .contenedor{
     margin: 15px;
     padding: 15px;
+    display: inline ;
 }
 
- .contenedor {
-    margin: 10PX;
-    display: inline-block;
+/*FOTO DEL INICIO*/
+.foto-home{
 
+    border: 5px solid black;
+    width: 353px;
+    height: 235px;
+}
 
- }
+/*MAIL DE CONTACTO*/ 
+a[href="mailto:mdhl@chihockey.org"]{
+
+text-decoration: none;
+width: 0px;
+height: 0px;
+color: green;
+display: inline-block;
+}
+
+/* FOTO DE CONTACT */
+
+.foto-contact   {
+
+    margin: 15px;
+    border: 5px solid black;
+    width: 365px;
+    height: 260px;
+}
+
+.contenedorGeneral{
+    margin: 15px;
+    padding: 15px;
+    display: inline-flex;
+
+}
+
+.contenedorTexto{
+    margin: 15px;
+    padding: 10px;
+}
