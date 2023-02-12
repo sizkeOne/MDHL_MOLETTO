@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*TITULO PRINCIPAL DEL BANNER*/
+
+h1{
+position: absolute;
+top: 0;
+left: 10px;
+text-align: center;
+font-size: 5rem;
+}
+
+/*HEADER*/
+header{
+    background-color: black;
+    min-width: 1000px;
+}
+
+/*LOGO */
+.logo
+{
+    position: absolute;
+    top: 450px;
+    right: 50px;
+    width: 20%   ; height: 20%;
+    border-radius: 50%;
+    z-index: 1;
+    border: solid black;
+}
+
+/*IMAGEN DEL BANNER*/
+.banner
+{
+
+height: 100%;
+width: 100%;
+min-width: 1000px;
+
+}
+
+
+/*BOTONES DEL MENU*/
+a{
+    display: block;
+    margin: 10px;
+    width: 100px;
+    height: 25px;
+    background-color : black;
+    color: white;
+text-align: center;
+text-decoration: none;
+
+}
+
+/*BOTON PAGINA SELECCIONADA*/
+a[href="#"]{
+    display: block;
+    margin: 10px;
+    width: 100px;
+    height: 25px;
+    background-color : green;
+    color: white;
+text-align: center;
+text-decoration: none;
+}
+
+.menu {
+padding: 5px;
+}
+
+/*ESTILO NAV*/
+nav {
+    background-color: beige;
+    min-width: 1000px;
+    
+}
+
+/*TITULO ABOUT*/
+.titulo {
+
+    top: 280px;
+    left: 250px;
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    min-width: 1000px;
+
+}
+/*ESTILO MAIN*/
+main
+{
+    background-color: beige;
+
+ min-width: 1000px;
+}
+
+/*FOTO DE CHICO JUGANDO HOCKEY*/
+.foto-about{
+    border: 5px solid black;
+    width: 345px;
+    height: 260px;
+}
+
+/* SECCION ESTILO*/
+section{
+    margin: 15px;
+    padding: 20px;
+    display: inline-flex;
+}
+
+/*CONTENEDORES*/
+article, .mision{
+    margin: 15px;
+    padding: 15px;
+}
+
+ .contenedor {
+    margin: 10PX;
+    display: inline-block;
+
+
+ }
