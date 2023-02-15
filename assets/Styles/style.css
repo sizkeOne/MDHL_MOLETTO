@@ -2,34 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*TITULO PRINCIPAL DEL BANNER*/
 
 h1 {
-    position: absolute;
-    top: 0;
-    left: 10px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
     text-align: center;
-    font-size: 5rem;
+    font-size: 1px;
+    min-width: 129.5vh;
 }
 
 /*HEADER*/
 header {
+    display: flex;
+    flex-direction: column;
     background-color: black;
-    min-width: 1000px;
+
+    flex-wrap: wrap;
+    min-width: 129.5vh;
 }
 
 /*LOGO */
 .logo {
     position: absolute;
-    top: 330px;
-    right: 50px;
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
+
+    display: flex;
+
+    transform: translate(950px, 325px);
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 14%;
+    height: 14%;
+    border-radius: 20%;
+    padding: 1px;
+    margin: 10px;
+    border: 5px solid red;
     z-index: 1;
-    border: solid black;
 }
 
 /*IMAGEN DEL BANNER*/
@@ -44,120 +56,291 @@ header {
 
 /*BOTONES DEL MENU*/
 a {
-    display: block;
-    margin: 10px;
-    width: 100px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     height: 25px;
+    gap: 0.5rem;
+    margin: 10px;
+    padding: 1px;
+    border-radius: 10px;
     background-color: black;
     color: white;
-
-    justify-items: center;
-    text-align: center;
     text-decoration: none;
 
 }
 
 /*BOTON PAGINA SELECCIONADA*/
 a[href="#"] {
-    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
-    width: 100px;
+    width: 200px;
     height: 25px;
     background-color: green;
     color: white;
-    text-align: center;
+    text-decoration: none;
+
+}
+
+a:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(19, 63, 19);
+    color: white;
     text-decoration: none;
 }
 
 .menu {
     padding: 5px;
+    display: flex;
 }
 
 /*ESTILO NAV*/
 nav {
-    background-color: beige;
-    min-width: 1000px;
+
+
+    flex-direction: row;
+    align-content: start;
+    text-align: center;
+    gap: 0.2rem;
+    background-image: url(https://libluck.se/wp-content/uploads/2016/08/Virrvarr-vit_silver.jpg);
+
+    min-width: 129.5vh;
 
 }
 
 /*TITULO ABOUT*/
 .titulo {
 
-    top: 280px;
-    left: 250px;
-    display: block;
+
+    display: flex;
     background-color: black;
     color: white;
-    text-align: center;
-    min-width: 1000px;
-
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    min-width: 125vh;
 }
 
 /*ESTILO MAIN*/
 main {
-    background-color: beige;
-
-    min-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(https://libluck.se/wp-content/uploads/2016/08/Virrvarr-vit_silver.jpg);
+    min-width: 129.5vh;
+    justify-content: center;
 }
 
 /*FOTO DE CHICO JUGANDO HOCKEY SECCION ABOUT*/
-.foto-about {
+.foto-about img {
+
     border: 5px solid black;
-    width: 345px;
+    border-radius: 25px;
+    width: 350px;
     height: 260px;
 }
 
 /* SECCION ESTILO*/
 section {
-    margin: 15px;
-    padding: 20px;
-    display: inline-flex;
+    display: flex;
+    gap: 10px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 
 /*CONTENEDORES*/
 article,
 .contenedor {
-    margin: 15px;
-    padding: 15px;
-    display: inline;
+    margin: 30px;
+    padding: 20px;
+
 }
 
 /*FOTO DEL INICIO*/
-.foto-home {
+.foto-home img {
 
     border: 5px solid black;
-    width: 353px;
-    height: 235px;
+    width: 350px;
+    height: 260px;
+    border-radius: 25px;
 }
 
 /*MAIL DE CONTACTO*/
 a[href="mailto:mdhl@chihockey.org"] {
-
+    background-color: rgba(240, 248, 255, 0);
     text-decoration: none;
-    width: 0px;
-    height: 0px;
+    width: 100px;
+    height: 10px;
     color: green;
     display: inline-block;
 }
 
 /* FOTO DE CONTACT */
 
-.foto-contact {
+.foto-contact img {
 
     margin: 15px;
     border: 5px solid black;
-    width: 365px;
+    width: 350px;
     height: 260px;
+    border-radius: 25px;
 }
 
+/*CONTENEDOR CONTACT*/
 .contenedorGeneral {
-    margin: 15px;
-    padding: 15px;
-    display: inline-flex;
+
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+    text-align: center;
 
 }
 
 .contenedorTexto {
     margin: 15px;
+
+}
+
+/*TARJETAS*/
+article,
+.contenedor {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border: 5px solid red;
+    border-radius: 25px;
+
+    box-shadow: 5px 5px 5px 5px rgba(104, 104, 104, 0.829);
+}
+
+.tarjetas {
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+     */
+    justify-self: center;
+    justify-content: space-evenly;
+
+}
+
+.tarjetas h2 {
+    text-align: center;
+    text-shadow: 2px 2px white;
+}
+
+/*CONTENDERO DE FOTOS*/
+.contenedorFotos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*RULES SECTION*/
+
+.rulesSection {
+    display: flex;
+    flex-direction: column;
+}
+
+/*LISTAS DE RULES*/
+.ListaDeReglas {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
     padding: 10px;
+    gap: 1rem;
+}
+
+
+.listaLetras>li {
+    list-style: lower-latin;
+}
+
+article h2 {
+    text-align: center;
+    gap: 10px;
+}
+
+#allplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.gameInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.InfoGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    gap: 1rem;
+    margin: 15px;
+    padding: 20px;
+    margin-bottom: px;
+}
+
+
+
+/*TABLAS*/
+
+table {
+    background-color: rgba(15, 104, 182, 0.747);
+    height: 50vh;
+    width: 40rem;
+    table-layout: auto;
+    border-spacing: 5px;
+    border-collapse: collapse;
+    /* empty-cells: hide; */
+    caption-side: bottom;
+}
+
+table,
+th,
+td {
+    border: 5px solid;
+    border-color: black;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: aliceblue;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: 30px;
+    min-width: 129.5vh
 }
