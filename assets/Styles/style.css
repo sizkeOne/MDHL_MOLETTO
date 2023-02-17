@@ -3,54 +3,65 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 /*TITULO PRINCIPAL DEL BANNER*/
 
 h1 {
-    display: flex;
+
+    font-size: 50px;
+    color: aliceblue;
+    flex-grow: 1;
     align-self: center;
-    justify-self: center;
-    text-align: center;
-    font-size: 1px;
-    min-width: 129.5vh;
 }
 
 /*HEADER*/
 header {
     display: flex;
     flex-direction: column;
-    background-color: black;
 
-    flex-wrap: wrap;
+    background-color: black;
     min-width: 129.5vh;
+
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 }
 
 /*LOGO */
+
+
 .logo {
-    position: absolute;
 
-    display: flex;
 
-    transform: translate(950px, 325px);
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 14%;
-    height: 14%;
+
+    transform: translate(30%, 0%);
+    width: 15vh;
+
     border-radius: 20%;
     padding: 1px;
     margin: 10px;
     border: 5px solid red;
-    z-index: 1;
+
+
+}
+
+
+figure {
+    display: flex;
 }
 
 /*IMAGEN DEL BANNER*/
 .banner {
-
-    max-height: 400px;
+    display: flex;
+    max-height: 300px;
     width: 100%;
-    min-width: 1000px;
-
+    min-width: 129.5vh;
+    flex-grow: 2;
 }
 
 
@@ -102,6 +113,7 @@ a:hover {
 .menu {
     padding: 5px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 /*ESTILO NAV*/
@@ -109,7 +121,8 @@ nav {
 
 
     flex-direction: row;
-    align-content: start;
+    align-content: center;
+    justify-content: center;
     text-align: center;
     gap: 0.2rem;
     background-image: url(https://libluck.se/wp-content/uploads/2016/08/Virrvarr-vit_silver.jpg);
@@ -129,7 +142,9 @@ nav {
     justify-content: center;
     margin: 20px;
     min-width: 125vh;
+
 }
+
 
 /*ESTILO MAIN*/
 main {
@@ -138,6 +153,7 @@ main {
     background-image: url(https://libluck.se/wp-content/uploads/2016/08/Virrvarr-vit_silver.jpg);
     min-width: 129.5vh;
     justify-content: center;
+
 }
 
 /*FOTO DE CHICO JUGANDO HOCKEY SECCION ABOUT*/
@@ -152,9 +168,10 @@ main {
 /* SECCION ESTILO*/
 section {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     flex-direction: column-reverse;
-    flex-wrap: wrap;
+
     align-items: center;
 
 }
@@ -162,8 +179,9 @@ section {
 /*CONTENEDORES*/
 article,
 .contenedor {
-    margin: 30px;
-    padding: 20px;
+    margin: 20px;
+    padding: 30px;
+
 
 }
 
@@ -212,11 +230,14 @@ a[href="mailto:mdhl@chihockey.org"] {
 
 }
 
+
 /*TARJETAS*/
 article,
 .contenedor {
     display: flex;
     gap: 10px;
+    padding: 10px;
+    margin: 15px;
     flex-direction: column;
     border: 5px solid red;
     border-radius: 25px;
@@ -224,11 +245,16 @@ article,
     box-shadow: 5px 5px 5px 5px rgba(104, 104, 104, 0.829);
 }
 
+article p {
+    text-align: center;
+    justify-self: center;
+}
+
 .tarjetas {
     display: flex;
-    /* justify-content: center;
+
     align-items: center;
-     */
+
     justify-self: center;
     justify-content: space-evenly;
 
@@ -236,7 +262,8 @@ article,
 
 .tarjetas h2 {
     text-align: center;
-    text-shadow: 2px 2px white;
+    text-shadow: 3px 1px rgb(145, 144, 144);
+
 }
 
 /*CONTENDERO DE FOTOS*/
@@ -245,6 +272,7 @@ article,
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /*RULES SECTION*/
@@ -281,6 +309,8 @@ article h2 {
     gap: 15px;
 }
 
+/*Game information*/
+
 .gameInformation {
     display: flex;
     flex-direction: column;
@@ -299,7 +329,7 @@ article h2 {
     gap: 1rem;
     margin: 15px;
     padding: 20px;
-    margin-bottom: px;
+    margin-bottom: 20px;
 }
 
 
@@ -307,20 +337,19 @@ article h2 {
 /*TABLAS*/
 
 table {
-    background-color: rgba(15, 104, 182, 0.747);
+    background-color: rgba(83, 87, 90, 0.548);
     height: 50vh;
     width: 40rem;
     table-layout: auto;
-    border-spacing: 5px;
-    border-collapse: collapse;
-    /* empty-cells: hide; */
+    border-spacing: 2px;
     caption-side: bottom;
 }
 
 table,
 th,
 td {
-    border: 5px solid;
+    table-layout: fixed;
+    border: 1px solid;
     border-color: black;
     text-align: center;
 }
@@ -330,6 +359,168 @@ th {
     color: aliceblue;
     padding-bottom: 5px;
     padding-top: 5px;
+}
+
+/*FORMULARIO*/
+.RegisterSec {
+    width: 900px;
+    background-color: rgba(240, 248, 255, 0.425);
+    display: flex;
+    flex-direction: column;
+ 
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 2px 3px red;
+    border-radius: 25px;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.RegisterSheet{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+justify-content: center;
+align-items: center;
+}
+
+/*Rectangulo formulario*/
+fieldset {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: end;
+    gap: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 325px;
+
+    border-radius: 25px;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.199);
+
+}
+
+ 
+
+.Checkbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin: 5px;
+    background-color: rgba(245, 245, 220, 0.397);
+}
+
+.TextoForm{
+ 
+    
+    display: inline-flex;
+   flex-direction: column;
+   background-color: antiquewhite;
+  align-self: center;
+  padding: 10px;
+  margin: 15px;
+   
+}
+
+.Permisos {
+    display: flex;
+    flex-direction: column;
+   margin: 15px;
+   padding: 10px;
+   gap: 1rem;
+}
+/*MAPAS*/
+
+td img {
+    display: flex;
+    width: 3vh;
+    align-self: center;
+    justify-self: center;
+    padding: 1px;
+}
+
+/*normalizacion de href de icono map*/
+#maps, #maps2,#maps3,#maps4, #maps5,#maps6,#maps7,#maps8,#maps9 {
+    width: 0px;
+    height: 0px;
+}
+
+/*contenedor de icon mapa en la tabla*/
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 3rem;
+    margin: 0.01px;
+    padding: 1px;
+    border: 2px 2px rgba(0, 0, 0, 0.747);
+}
+
+.map:hover {
+    justify-self: auto;
+    width: 129px;
+    height: 100px;
+    background-color: aqua;
+    z-index: 1;
+}
+
+
+/*CONTENEDOR DE MAPAS*/
+
+.zonaMapas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 15px;
+    margin: 25px;
+    height: auto;
+    background-color: rgba(251, 252, 202, 0.349);
+    border-radius: 25px;
+    border: 5px solid black;
+    text-align: center;
+}
+
+/* mapa */
+.mapa {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    justify-self: auto;
+    align-self: auto;
+    margin: 20px;
+    padding: 5px;
+}
+
+/*Tarjeta mapa*/
+.tarjetasMapas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 158, 122, 0.397);
+    border-radius: 20px;
+    padding: 10px;
+    border: solid 5px red;
+
+
+}
+
+/*nombre del mapa*/
+.mapa p {
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
 }
 
 /*FOOTER*/
